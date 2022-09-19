@@ -19,8 +19,9 @@ const Dogs = () => {
                 setData(res);
             }else{
                 navigate("/404")
+                return
             }
-
+            setIsLoading(false);
         }
 
         fetchData();
